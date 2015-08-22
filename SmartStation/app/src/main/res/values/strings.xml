@@ -18,10 +18,10 @@
     <string name="right_box_mail_weight">郵筒右邊換算預估郵件量  :</string>
 
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-
+    <string name="title_section1">郵箱查詢</string>
+    <string name="title_section2">系統介紹</string>
+    <string name="title_section3">關於我們</string>
+    <string name="intro_txt">智慧驛站系統，旨在利用最新的IoT技術輔助郵差在工作時，能夠更有效地掌握郵箱內的郵件狀況。結合了Linkit開發版，我們可以感應郵箱投遞的狀況，並且透過GPRS/Wi-Fi等無線通訊技術，將資料傳到雲端的Database，透過Web將目前的郵箱狀況展示出來。同時，我們也支援Android行動裝置的資料查詢，郵差與寄件者，可以透過app去資料庫查詢目前郵箱的狀況，能夠快速方便的獲取相關資訊。</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 

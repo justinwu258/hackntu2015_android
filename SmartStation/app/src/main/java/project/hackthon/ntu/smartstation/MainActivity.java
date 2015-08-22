@@ -42,6 +42,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
      * Used to store the last screen title. For use in {@link #restoreActionBar()}.
      */
     private CharSequence mTitle;
+    private int fragment_page = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,6 +85,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
                 mTitle = getString(R.string.title_section3);
                 break;
         }
+        fragment_page = number;
     }
 
     public void restoreActionBar() {
@@ -264,7 +266,8 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
     public boolean onCreateOptionsMenu(Menu menu) {
 //        // Inflate the menu items for use in the action bar
 //        MenuInflater inflater = getMenuInflater();
-//        inflater.inflate(R.menumain_activity_actions.xml.main_activity_actions, menu);
+        getMenuInflater().inflate(R.menu.main_activity_actions, menu);
+        restoreActionBar();
         return super.onCreateOptionsMenu(menu);
     }
 
