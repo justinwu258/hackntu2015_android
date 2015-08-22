@@ -16,4 +16,15 @@
     <string name="left_box_mail_weight">郵筒左邊重量換算預估郵件量  :</string>
     <string name="right_box_mail_num">郵筒右邊投信次數  :</string>
     <string name="right_box_mail_weight">郵筒右邊換算預估郵件量  :</string>
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
 </resources>
