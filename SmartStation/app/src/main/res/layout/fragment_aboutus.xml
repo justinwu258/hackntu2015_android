@@ -20,6 +20,6 @@
                 android:singleLine="false"
                 android:textSize="20sp"
                 android:padding="10sp"
-                android:text="@string/intro_txt"/>
+                android:text="@string/about_us"/>
         </LinearLayout>
 </ScrollView>

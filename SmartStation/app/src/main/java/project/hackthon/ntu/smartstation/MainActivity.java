@@ -1,6 +1,7 @@
 package project.hackthon.ntu.smartstation;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -67,22 +68,51 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         // update the main content by replacing fragments
+        Fragment fragment = null;
+        switch (position) {
+            case 0:
+                fragment = PlaceholderFragment.newInstance(position + 1);
+                break;
+
+            case 1:
+                fragment = new IntroFragment();
+                break;
+
+            case 2:
+                fragment = new AboutUS_Fragment();
+                break;
+
+            default:
+                //ÁÙ¨S»s§@ªº¿ï¶µ¡Afragment ¬O null¡Aª½±µªð¦^
+                return;
+        }
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, fragment)
                 .commit();
     }
 
     public void onSectionAttached(int number) {
+        Log.v("ntu_debug","number = " + number);
+        Intent intent;
         switch (number) {
             case 1:
                 mTitle = getString(R.string.title_section1);
+//                intent = new Intent(this,MainActivity.class);
+//                startActivity(intent);
+//                finish();
                 break;
             case 2:
                 mTitle = getString(R.string.title_section2);
+//                intent = new Intent(this,IntroActivity.class);
+//                startActivity(intent);
+//                finish();
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+//                intent = new Intent(this,AboutUS_Activity.class);
+//                startActivity(intent);
+//                finish();
                 break;
         }
         fragment_page = number;
@@ -243,7 +273,8 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
                                         right_box_mail_num.setText(str_right_box_mail_num);
                                         String str_right_box_mail_weight = json.getString("right_box_mail_weight");
                                         right_box_mail_weight.setText(str_right_box_mail_weight);
-                                    } catch (JSONException e) {}
+                                    } catch (JSONException e) {
+                                    }
                                 }
                             });
                         }
