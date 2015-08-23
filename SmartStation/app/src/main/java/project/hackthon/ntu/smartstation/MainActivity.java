@@ -75,14 +75,17 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
         switch (position) {
             case 0:
                 fragment = PlaceholderFragment.newInstance(position + 1);
+                mTitle = getString(R.string.title_section1);
                 break;
 
             case 1:
                 fragment = new IntroFragment();
+                mTitle = getString(R.string.title_section2);
                 break;
 
             case 2:
                 fragment = new AboutUS_Fragment();
+                mTitle = getString(R.string.title_section3);
                 break;
 
             default:
@@ -93,6 +96,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerF
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
                 .commit();
+        restoreActionBar();
     }
 
     public void onSectionAttached(int number) {
