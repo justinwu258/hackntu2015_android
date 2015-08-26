@@ -19,26 +19,6 @@
             android:layout_height="fill_parent"
             android:orientation="vertical"
             >
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:paddingLeft="10sp"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView android:text="@string/postbox_id"
-                    android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                </TextView>
-                <EditText
-                    android:id="@+id/postbox_id_editable"
-                    android:text="@string/post_text"
-                    android:textSize="17sp"
-                    android:singleLine="true"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-                </EditText>
-            </LinearLayout>
 
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:paddingLeft="10sp"
@@ -60,10 +40,31 @@
                     android:layout_height="wrap_content">
                 </EditText>
             </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingLeft="10sp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:text="@string/postbox_id"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+                <EditText
+                    android:id="@+id/postbox_id_editable"
+                    android:text="@string/post_text"
+                    android:textSize="17sp"
+                    android:singleLine="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+                </EditText>
+            </LinearLayout>
+
+
 
             <Button
                 android:id="@+id/search_button"
-                android:background="@drawable/ic_action_search"
                 android:text="@string/search_button"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content" />

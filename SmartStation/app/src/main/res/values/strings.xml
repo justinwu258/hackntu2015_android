@@ -5,7 +5,7 @@
     <string name="action_search">搜尋</string>
     <string name="action_settings">設定</string>
     <string name="search_button">搜尋</string>
-    <string name="postbox_id">郵筒所屬郵局  :</string>
+    <string name="postbox_id">郵筒編號  :</string>
     <string name="ZIPCODE">行政區  :</string>
     <string name="state">資料狀態:</string>
     <string name="postbox_longitude">郵筒所在位置GPS資訊經度  :</string>
@@ -21,11 +21,16 @@
     <string name="title_section1">郵箱查詢</string>
     <string name="title_section2">系統介紹</string>
     <string name="title_section3">關於我們</string>
+    <string name="intro">系統說明</string>
     <string name="intro_txt">智慧驛站系統，旨在利用最新的IoT技術輔助郵差在工作時，能夠更有效地掌握郵箱內的郵件狀況。結合了Linkit開發版，我們可以感應郵箱投遞的狀況，並且透過GPRS/Wi-Fi等無線通訊技術，將資料傳到雲端的Database，透過Web將目前的郵箱狀況展示出來。同時，我們也支援Android行動裝置的資料查詢，郵差與寄件者，可以透過app去資料庫查詢目前郵箱的狀況，能夠快速方便的獲取相關資訊。</string>
-    <string name="about_us">我們是一個具有IoT技術整合的團隊，希望大家喜歡我們的作品，也請大家不吝給予指點和建議!! \n\nNTU Hackathon 2015. \nTeam: SmartStation.</string>
+    <string name="about_us">我們是一個具有IoT技術整合的團隊，希望大家喜歡我們的作品，也請大家不吝給予指點和建議!!\n\nNTU Hackathon 2015. \nTeam: SmartStation.</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_example">Example action</string>
+
+    <string name="title_activity_entry">智慧驛站</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">SMART\nSTATION</string>
 
 </resources>

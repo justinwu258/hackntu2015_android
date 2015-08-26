@@ -18,8 +18,21 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="false"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:padding="10sp"
+                android:text="@string/intro"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
                 android:textSize="20sp"
                 android:padding="10sp"
                 android:text="@string/intro_txt"/>
+            <ImageView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                android:gravity="center"
+                android:src="@drawable/postbox"/>
         </LinearLayout>
 </ScrollView>
